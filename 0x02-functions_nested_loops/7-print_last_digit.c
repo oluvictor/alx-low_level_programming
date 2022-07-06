@@ -24,7 +24,7 @@ int print_last_digit(int n)
 	else
 	{
 		last = (n % 10)/-1;
-		_putcher(48 + last);
+		_putchar(48 + last);
 		return (last);
 
 }
