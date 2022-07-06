@@ -18,6 +18,6 @@ int print_last_digit(int n)
 	else
 	{
 		last  = n % 10;
-		return (last);
+		return ('0' + last);
 	}
 }
