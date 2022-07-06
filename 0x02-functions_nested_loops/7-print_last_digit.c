@@ -23,8 +23,9 @@ int print_last_digit(int n)
 	}
 	else
 	{
-		last = (n % 10)/-1;
+		last = (n % 10) / -1;
 		_putchar(48 + last);
 		return (last);
+	}
 
 }
