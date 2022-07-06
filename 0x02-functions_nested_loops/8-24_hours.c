@@ -2,25 +2,40 @@
 #include "main.h"
 
 /**
- * print_alphabet_x10 - print all lowercase alphabets
- * ten times
+ * jack_bauer - print minutes of the day
  *
- * Return: 0 (always success)
+ * Return: void
  */
-void print_alphabet_x10(void)
+void jack_bauer(void)
 {
-	int j = 1;
+	int i = 48;
 
-	while (j <= 10)
+	while (i <= 50)
 	{
-		int i = 97;
+		_putchar(i);
+		int j = 48;
 
-		while (i <= 122)
+		while (j <= 51)
 		{
-			_putchar(i);
-			i++;
+			_putchar(j);
+			_putchar(58);
+			int k = 48;
+
+			while (k <= 53)
+			{
+				_putchar(k);
+				int n = 48;
+
+				while (n <= 57)
+				{
+					_putchar(n);
+					_putchar('\n');
+					n++;
+				}
+				k++;
+			}
+			j++;
 		}
-		_putchar(10);
-		j++;
+		i++;
 	}
 }
