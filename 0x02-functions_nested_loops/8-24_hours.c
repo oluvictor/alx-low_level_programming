@@ -8,23 +8,23 @@
  */
 void jack_bauer(void)
 {
-	int i = 48;
+	int i = 48, j, k, n;
 
 	while (i <= 50)
 	{
 		_putchar(i);
-		int j = 48;
+		j = 48;
 
 		while (j <= 51)
 		{
 			_putchar(j);
 			_putchar(58);
-			int k = 48;
+			k = 48;
 
 			while (k <= 53)
 			{
 				_putchar(k);
-				int n = 48;
+				n = 48;
 
 				while (n <= 57)
 				{
