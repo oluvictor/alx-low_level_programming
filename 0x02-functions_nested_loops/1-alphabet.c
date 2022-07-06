@@ -1,3 +1,5 @@
+#include <unistd.h>
+
 /**
  * print_alphabet - print all lowercase alphabets
  *
