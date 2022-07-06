@@ -1,5 +1,5 @@
 #include <unistd.h>
-
+#include "_putchar.c"
 /**
  * print_alphabet - print all lowercase alphabets
  *
