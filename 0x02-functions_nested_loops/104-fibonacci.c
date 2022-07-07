@@ -10,14 +10,14 @@
 int main(void)
 {
 	int i;
-	float n1 = 0;
-	float n2 = 1;
-	float next;
+	long double n1 = 0;
+	long double n2 = 1;
+	long double next;
 
 	for (i = 0; i < 98; i++)
 	{
 		next = n1 + n2;
-		printf("%.0f", next);
+		printf("%.0Lf", next);
 		n1  = n2;
 		n2 = next;
 		if (i < 49)
