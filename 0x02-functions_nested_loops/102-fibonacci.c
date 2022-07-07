@@ -10,16 +10,20 @@
 int main(void)
 {
 	int i;
-	long n1 = 1;
-	long n2 = 2;
+	long n1 = 0;
+	long n2 = 1;
 	long next;
 
 	for (i = 0; i < 50; i++)
 	{
 		next = n1 + n2;
-		printf("%ld, ", next);
+		printf("%ld", next);
 		n1  = n2;
 		n2 = next;
+		if (i < 49)
+		{
+			printf(", ");
+		}
 	}
 	printf("\n");
 	return (0);
