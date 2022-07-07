@@ -1,6 +1,5 @@
 #include <unistd.h>
 #include "main.h"
-#include <stdio.h>
 
 /**
  * times_table - print times table from 0
@@ -9,24 +8,32 @@
  */
 void times_table(void)
 {
-	int j = 0;
-	int solution;
+	int i, j, k, solution;
 
-	while (j <= 9)
+	for (i = 0; i <= 9; i++)
 	{
-		int i = 0;
-
-		while (i <= 9)
+		for (j = 0; j <= 9; j++)
 		{
-			solution = j * i;
-			printf("%d, ", solution);
-			/*
-			 * _putchar(',');
-			 * _putchar(32);
-			 */
-			i++;
+			solution = i * j;
+			if (j == 0)
+			{
+				_putchar('0');
+			}
+			if (solution < 10)
+			{
+				_putchar(',');
+				_putchar(32);
+				_putchar(32);
+				_putchar(solution + '0');
+			}
+			if (solution >= 10)
+			{
+				_putchar(',');
+				_putchar(32);
+				_putchar((solution / 10) + '0');
+				_putchar((solution % 10) + '0');
+			}
 		}
 		_putchar(10);
-		j++;
 	}
 }
