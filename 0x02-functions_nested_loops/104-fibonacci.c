@@ -10,6 +10,7 @@
 int main(void)
 {
 	int i;
+
 	long double n1 = 0;
 	long double n2 = 1;
 	long double next;
@@ -20,7 +21,7 @@ int main(void)
 		printf("%.0Lf", next);
 		n1  = n2;
 		n2 = next;
-		if (i < 49)
+		if (i < 97)
 		{
 			printf(", ");
 		}
