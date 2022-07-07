@@ -14,7 +14,7 @@ int main(void)
 	long n1 = 0;
 	long n2 = 1;
 	long next = 0;
-	long long sum = 0;
+	long sum = 0;
 
 	for (i = 0; next < 4000000; i++)
 	{
@@ -26,7 +26,7 @@ int main(void)
 		n1  = n2;
 		n2 = next;
 	}
-	printf("%lld", sum);
+	printf("%ld", sum);
 	printf("\n");
 	return (0);
 }
