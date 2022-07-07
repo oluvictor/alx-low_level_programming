@@ -19,7 +19,7 @@ void print_to_98(int n)
 				printf(", ");
 			n++;
 		}
-		_putchar('\n');
+		printf("\n");
 	}
 	else if (n == 98)
 	{
@@ -36,6 +36,6 @@ void print_to_98(int n)
 				printf(", ");
 			n--;
 		}
-		_putchar('\n');
+		printf("\n");
 	}
 }
