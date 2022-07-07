@@ -1,5 +1,6 @@
 #include <unistd.h>
 #include "main.h"
+#include <stdio.h>
 
 /**
  * times_table - print times table from 0
