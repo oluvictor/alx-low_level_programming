@@ -18,7 +18,7 @@ int main(void)
 	for (i = 0; i < 98; i++)
 	{
 		next = n1 + n2;
-		printf("%Lf", next);
+		printf("%.0Lf", next);
 		n1  = n2;
 		n2 = next;
 		if (i < 97)
