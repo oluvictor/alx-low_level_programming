@@ -28,6 +28,5 @@ void rev_string(char *s)
 		*(s + i) = *(s + size);
 		*(s + size)  = temp;
 		size--;
-		_putchar(temp);
 	}
 }
