@@ -8,5 +8,14 @@
  */
 int _strlen(char *s)
 {
-	return ((int) (sizeof(s) - 1));
+	int size = 0;
+	int i = 0;
+
+	while (*(s + i) != 0)
+	{
+		size  += 1;
+		/*printf("size: %c", *(s + i));*/
+		i++;
+	}
+	return (size);
 }
