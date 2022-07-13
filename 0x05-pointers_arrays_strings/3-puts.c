@@ -2,15 +2,18 @@
 
 /**
  * _puts - prints a string, followed by a new line, to stdout
- * @str: string to print
+ * @str: pointer to string
  *
  * Return: void
  */
 void _puts(char *str)
 {
-	
+	int i = 0;
 
-	tmp = *b;
-	*b = *a;
-	*a = tmp;
+	while (*(s + i))
+	{
+		_putchar(*(s + i));
+		i++;
+	}
+	_putchar('\n');
 }
