@@ -20,13 +20,15 @@ void rev_string(char *s)
 		++size;
 		i++;
 	}
-	/*char str[size];*/
+	/*printf("%d", size);
+	char str[size];*/
 
-	for (i = 0; i < size/2; i++)
+	for (i = 0; i <= size/2; i++)
 	{
 		temp = *(s + i);
 		*(s + i) = *(s + size);
 		*(s + size)  = temp;
+		/*printf("%c", *(s + i));*/
 		size--;
 	}
 }
