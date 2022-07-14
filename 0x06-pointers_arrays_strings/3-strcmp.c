@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * _strcmp - compares 2 strings
@@ -16,13 +17,13 @@ int _strcmp(char *s1, char *s2)
 
 	while (*(s1 + i) != '\0')
 	{
-		s1_size++; /* += *(s1 + i);*/
+		s1_size += *(s1 + i);
 		i++;
 	}
 	i = 0;
 	while (*(s2 + i) != '\0')
 	{
-		s2_size++; /* *(s2 + i);*/
+		s2_size += *(s2 + i);
 		i++;
 	}
 	if (s1_size < s2_size)
