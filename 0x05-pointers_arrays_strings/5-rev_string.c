@@ -20,11 +20,11 @@ void rev_string(char *s)
 	}
 	end  = size;
 
-	for (i = 0; i <= size / 2; i++)
+	for (i = 0; i <= (size / 2); i++)
 	{
 		temp = *(s + i);
 		*(s + i) = *(s + end);
-		*(s + size)  = temp;
+		*(s + end)  = temp;
 		end--;
 	}
 }
