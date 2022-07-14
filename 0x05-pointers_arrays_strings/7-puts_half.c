@@ -17,12 +17,12 @@ void puts_half(char *str)
 		++size;
 		i++;
 	}
-	
+
 	if (size % 2 == 0)
 		mid_point = size / 2;
 	else
 		mid_point = (size - 1) / 2;
-	for (i = mid_point; i < size; i++)
+	for (i = mid_point; i < size - 1; i++)
 	{
 		_putchar(*(str + i));
 	}
