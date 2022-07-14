@@ -13,7 +13,7 @@ char *_strcat(char *dest, char *src)
 	int i = 0;
 	int marker = 0;
 
-	while(*(dest + i))
+	while (*(dest + i))
 	{
 		marker++;
 		i++;
