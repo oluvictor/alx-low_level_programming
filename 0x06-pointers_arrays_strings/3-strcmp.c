@@ -12,28 +12,24 @@ int _strcmp(char *s1, char *s2)
 	int i = 0;
 	int s1_size = 0;
 	int s2_size = 0;
+	int r;
 
-	while (1)
+	while (*(s1 + i) != '\0')
 	{
-		if (*(s1 + i) == '\0')
-			break;
-		else
-			s1_size += *(s1 + i);
+		s1_size += *(s1 + i);
 		i++;
 	}
 	i = 0;
-	while (1)
+	while (*(s2 + i) != '\0')
 	{
-		if (*(s2 + i) == '\0')
-			break;
-		else
-			s2_size += *(s2 + i);
+		s2_size += *(s2 + i);
 		i++;
 	}
 	if (s1_size < s2_size)
-		return (-15);
+		r = -15;
 	else if (s1_size > s2_size)
-		return (15);
+		r = 15;
 	else
-		return (0);
+		r = 0;
+	return (r);
 }
