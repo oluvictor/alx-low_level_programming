@@ -22,6 +22,8 @@ char *_strncat(char *dest, char *src, int n)
 	}
 	for (i = 0; i < n; i++, marker++)
 	{
+		if(*(src + i) == '\0')
+			break;
 		*(dest + marker) = *(src + i);
 	}
 	*(dest + marker) = '\0';
