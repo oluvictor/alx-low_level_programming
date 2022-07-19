@@ -14,13 +14,7 @@ unsigned int _strspn(char *s, char *accept)
 	int j = 0;
 	int num = 0;
 	int stop_flag = 0;
-	int accept_size = 0;
 
-	while (accept[j] != '\0')
-	{
-		accept_size++;
-		j++;
-	}
 	for (i = 0; s[i]; i++)
 	{
 		for (j = 0; accept[j]; j++)
