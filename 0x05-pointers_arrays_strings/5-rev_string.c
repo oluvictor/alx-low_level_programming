@@ -18,9 +18,9 @@ void rev_string(char *s)
 		++size;
 		i++;
 	}
-	end  = size-1;
+	end  = size - 1;
 
-	for (i = 0; i <= (size / 2); i++)
+	for (i = 0; i < (size / 2); i++)
 	{
 		temp = *(s + i);
 		*(s + i) = *(s + end);
