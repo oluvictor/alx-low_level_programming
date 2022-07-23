@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stddef.h>
+#include <string.h>
 
 /**
  * is_palindrome - returns 1 if a string is a palindrome
@@ -10,9 +10,13 @@
  */
 int is_palindrome(char *s)
 {
-	if (*s)
+	int length = strlen(s);
+
+	if (*s == '\0')
+		return (1);
+	if (*s != '\0')
 	{
-		if (is_pa
+		if (s[0] == s[len
 		return (is_palindrome(s + 1));
 	}
 }
