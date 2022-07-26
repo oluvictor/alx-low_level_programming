@@ -7,7 +7,7 @@
  * 2 dimensional array of integers
  * @width: width of array
  * @height: height of array
- * 
+ *
  * Return: pointer to 2D array
  */
 int **alloc_grid(int width, int height)
@@ -22,7 +22,7 @@ int **alloc_grid(int width, int height)
 			return (NULL);
 		for (i = 0; i < height; i++)
 		{
-			array[i] = malloc(height * sizeof(int));
+			array[i] = malloc(width * sizeof(int));
 		}
 		for (i = 0; i < height; i++)
 		{
