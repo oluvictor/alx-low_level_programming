@@ -34,12 +34,13 @@ int main(int argc, char *argv[])
 	{
 		num1 = atoi(argv[1]);
 		num2 = atoi(argv[2]);
-		if ((strlen(argv[1]) == count_digit(num1)) && (strlen(argv[2]) == count_digit(num2)))
+		if ((strlen(argv[1]) == count_digit(num1))
+				&& (strlen(argv[2]) == count_digit(num2)))
 		{
 			printf("%d\n", num1 * num2);
 			return (0);
 		}
 	}
 	printf("Error\n");
-	exit (98);
+	exit(98);
 }
