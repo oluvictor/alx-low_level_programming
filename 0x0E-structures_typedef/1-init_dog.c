@@ -4,7 +4,7 @@
 
 /**
  * init_dog - initializes a dog variable
- * @d: pointer to dog 
+ * @d: pointer to dog
  * @name: name of dog
  * @age: age of dog
  * @owner: string owner of dog
