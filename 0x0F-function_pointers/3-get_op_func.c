@@ -20,7 +20,7 @@ int (*get_op_func(char *s))(int, int)
 	int i;
 
 	i = 0;
-	while(ops[i].op[0])
+	while (ops[i].op[0] && ops[i].op != NULL)
 	{
 		if (ops[i].op[0] == s[0])
 		{
@@ -28,5 +28,7 @@ int (*get_op_func(char *s))(int, int)
 		}
 		i++;
 	}
+	printf("Error\n");
+	exit(99);
 	return (NULL);
 }
